@@ -4,13 +4,6 @@ This project showcases the implementation of a security-centric CI/CD pipeline, 
 
 ![Security-centric CI/CD Pipeline](Architecture/ArchitectureDiag.GCP.png)
 
-
-### Screenshots and Process
-![Deployed Website](ProjectImages/DeployedWebsite.png)
-![GrafanaDashboard](ProjectImages/GrafanaMonitoringSystem.png)
-![Blackbox Exporter](ProjectImages/BlackboxExporter.png)
-![Website Traffic Monitor](ProjectImages/GrafanaMonitoringWebsiteTraffic.png)
-
 ## Introduction
 
 * **Security by Design:** Security considerations are integrated into every stage of the development and deployment process.
@@ -39,6 +32,12 @@ This project showcases the implementation of a security-centric CI/CD pipeline, 
 * `src/`: Contains the source code of the demonstration application, Gcloud Infra and installation scripts, Kubernetes configuration files, etc.
 * `terraform/` : Terraform configuration files.
 * `Jenkinsfile`:  Declarative Jenkins pipeline definition.
+
+### Screenshots
+![Deployed Website](ProjectImages/DeployedWebsite.png)
+![GrafanaDashboard](ProjectImages/GrafanaMonitoringSystem.png)
+![Blackbox Exporter](ProjectImages/BlackboxExporter.png)
+![Website Traffic Monitor](ProjectImages/GrafanaMonitoringWebsiteTraffic.png)
 
 ## Workflow
 
