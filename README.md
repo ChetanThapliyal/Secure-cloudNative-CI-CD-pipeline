@@ -21,6 +21,7 @@ This project showcases the implementation of a security-centric CI/CD pipeline, 
 * **Docker Hub:** Docker image registry.
 * **Kubeaudit:** Tool to audit Kubernetes clusters for various different security concerns.
 * **Grafana**: For system and application-level monitoring and alerting.
+* **Prometheus**: For collecting and querying metrics from services and endpoints.
 * **Gmail**: For status notifications and alerts.
 
 
