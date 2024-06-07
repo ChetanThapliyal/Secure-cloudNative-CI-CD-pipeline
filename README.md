@@ -4,7 +4,14 @@ This project showcases the implementation of a security-centric CI/CD pipeline, 
 
 ![Security-centric CI/CD Pipeline](Architecture/ArchitectureDiag.GCP.png)
 
-## Key Principles
+
+### Screenshots and Process
+![Deployed Website](ProjectImages/DeployedWebsite.png)
+![GrafanaDashboard](ProjectImages/GrafanaDashboard.png)
+![Blackbox Exporter](ProjectImages/BlackboxExporter.png)
+![Website Traffic Monitor](ProjectImages/GrafanaMonitoringWebsiteTraffic.png)
+
+## Introduction
 
 * **Security by Design:** Security considerations are integrated into every stage of the development and deployment process.
 * **Automation:** The pipeline leverages automation to enhance efficiency, security, and reduce human error.
