@@ -7,7 +7,7 @@ This project showcases the implementation of a security-centric CI/CD pipeline, 
 
 ### Screenshots and Process
 ![Deployed Website](ProjectImages/DeployedWebsite.png)
-![GrafanaDashboard](ProjectImages/GrafanaDashboard.png)
+![GrafanaDashboard](ProjectImages/GrafanaMonitoringSystem.png)
 ![Blackbox Exporter](ProjectImages/BlackboxExporter.png)
 ![Website Traffic Monitor](ProjectImages/GrafanaMonitoringWebsiteTraffic.png)
 
