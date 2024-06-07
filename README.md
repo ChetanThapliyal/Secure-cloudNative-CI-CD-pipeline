@@ -1,4 +1,4 @@
-# End-to-End Secure CI/CD Project
+# End-to-End Secure CLoud Native CI/CD Pipeline
 
 This project showcases the implementation of a security-centric CI/CD pipeline, featuring code quality checks, vulnerability scanning, artifact publishing, secure Kubernetes deployment, and continuous monitoring.
 
