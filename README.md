@@ -32,18 +32,6 @@ This project showcases the implementation of a security-centric CI/CD pipeline, 
 * `terraform/` : Terraform configuration files.
 * `Jenkinsfile`:  Declarative Jenkins pipeline definition.
 
-
-## Setup Instructions
-
-1. **Prerequisites:**
-   * [List necessary tools/accounts: Kubernetes cluster, Docker, GitHub account, etc.]
-2. **Environment Configuration:**
-   * [Brief outline of network isolation, K8s security setup]
-3. **Tool Deployment (Jenkins, SonarQube, etc):**
-   * [Outline steps or reference detailed setup guides if needed]
-4. **Project Setup:**
-   * [How to clone the repo, connect to source control]
-
 ## Workflow
 
 1. **Development:**
