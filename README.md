@@ -1,10 +1,12 @@
 # End-to-End Secure Cloud Native CI/CD Pipeline
 
-This project showcases the implementation of a security-centric CI/CD pipeline, featuring code quality checks, vulnerability scanning, artifact publishing, secure Kubernetes deployment, and continuous monitoring.
+A security-centric CI/CD pipeline which integrates cutting-edge tools and practices to ensure robust code quality, vulnerability scanning, artifact publishing, secure Kubernetes deployment, and continuous monitoring.
 
 ![Security-centric CI/CD Pipeline](Architecture/ArchitectureDiag.GCP.png)
 
 ## Introduction
+
+CI/CD pipeline is built on the principles of security, automation, and continuous monitoring to deliver a seamless and secure development and deployment experience.
 
 * **Security by Design:** Security considerations are integrated into every stage of the development and deployment process.
 * **Automation:** The pipeline leverages automation to enhance efficiency, security, and reduce human error.
