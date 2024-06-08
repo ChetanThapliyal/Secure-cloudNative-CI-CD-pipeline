@@ -2,6 +2,8 @@
 
 A security-centric CI/CD pipeline which integrates cutting-edge tools and practices to ensure robust code quality, vulnerability scanning, artifact publishing, secure Kubernetes deployment, and continuous monitoring.
 
+#### [Read the Blog Post here!](https://blog.chetan-thapliyal.cloud/implementing-a-security-centric-cloud-native-cicd-pipeline-a-real-world-demonstration-using-terraform-and-gcp) 
+
 ![Security-centric CI/CD Pipeline](Architecture/ArchitectureDiag.GCP.png)
 
 ## Introduction
