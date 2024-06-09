@@ -126,6 +126,10 @@ resource "google_compute_instance" "cluster-instances-node-master" {
 ## Slave Node VM (2 nodes)
 resource "google_compute_instance" "cluster-instances-node-slave" {
     count = 2
+    name = "cluster-instances-node-slave0${count.index + 1}"
+    machine_type = "e2-medium"
+    tags = ["http-server", "https-server", "lb-health-check"]
+    zone = "asia-south1-c"
 
     boot_disk {
         auto_delete = true
@@ -149,19 +153,14 @@ resource "google_compute_instance" "cluster-instances-node-slave" {
         node        = "slave0${count.index + 1}"
     }
 
-    machine_type = "e2-medium"
-
     metadata = {
         startup-script = file("./scripts/slaveVM.sh")
     }
 
-    name = "cluster-instances-node-slave0${count.index + 1}"
-
     network_interface {
         access_config {
-        network_tier = "STANDARD"
+            network_tier = "STANDARD"
         }
-
         queue_count = 0
         stack_type  = "IPV4_ONLY"
         network     = google_compute_network.dev-cicd-vpc.name
@@ -184,14 +183,17 @@ resource "google_compute_instance" "cluster-instances-node-slave" {
         enable_secure_boot          = false
         enable_vtpm                 = true
     }
-
-    tags = ["http-server", "https-server", "lb-health-check"]
-    zone = "asia-south1-c"
 }
 
 # Sonarqube VM
 #---------------#
 resource "google_compute_instance" "sonarqube" {
+    name = "sonarqube"
+    machine_type = "e2-medium"
+    tags = ["http-server", "https-server", "lb-health-check"]
+    zone = "asia-south1-c"
+    
+    
     boot_disk {
         auto_delete = true
         device_name = "k8-cluster-nodes"
@@ -205,6 +207,10 @@ resource "google_compute_instance" "sonarqube" {
         mode = "READ_WRITE"
     }
 
+    metadata = {
+        startup-script = file("./scripts/sonarqube.sh")
+    }
+
     can_ip_forward      = false
     deletion_protection = false
     enable_display      = false
@@ -213,14 +219,6 @@ resource "google_compute_instance" "sonarqube" {
         goog-ec-src = "vm_add-tf"
         sonarqube   = ""
     }
-
-    machine_type = "e2-medium"
-
-    metadata = {
-        startup-script = file("./scripts/sonarqube.sh")
-    }
-
-    name = "sonarqube"
 
     network_interface {
         access_config {
@@ -249,9 +247,6 @@ resource "google_compute_instance" "sonarqube" {
         enable_secure_boot          = false
         enable_vtpm                 = true
     }
-
-    tags = ["http-server", "https-server", "lb-health-check"]
-    zone = "asia-south1-c"
 }
 #Access SonarQube by opening a web browser and navigating to http://VmIP:9000
 
