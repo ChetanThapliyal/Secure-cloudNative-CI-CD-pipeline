@@ -7,7 +7,7 @@ A security-centric CI/CD pipeline which integrates cutting-edge tools and practi
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
 - [Workflow](#workflow)
-- [Screenshots](#screenshots)
+- [Project Snippets](#proect-snippets)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
 - [License](#license)
