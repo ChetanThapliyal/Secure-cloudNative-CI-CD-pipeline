@@ -3,29 +3,21 @@
 A security-centric CI/CD pipeline which integrates cutting-edge tools and practices to ensure robust code quality, vulnerability scanning, artifact publishing, secure Kubernetes deployment, and continuous monitoring.
 
 ## Table of Contents
-- [End-to-End Secure Cloud Native CI/CD Pipeline](#end-to-end-secure-cloud-native-cicd-pipeline)
-  - [Table of Contents](#table-of-contents)
-      - [Read the Blog Post here!](#read-the-blog-post-here)
-  - [Introduction](#introduction)
-    - [Key Features](#key-features)
-    - [Business Benefits](#business-benefits)
-  - [Technologies Used](#technologies-used)
-  - [Project Structure](#project-structure)
-  - [Workflow](#workflow)
-    - [Screenshots](#screenshots)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-  - [Contributing](#contributing)
-  - [License](#license)
+- [Introduction](#introduction)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Workflow](#workflow)
+- [Screenshots](#screenshots)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [License](#license)
 
-#### [Read the Blog Post here!](https://blog.chetan-thapliyal.cloud/implementing-a-security-centric-cloud-native-cicd-pipeline-a-real-world-demonstration-using-terraform-and-gcp) 
-
-![Security-centric CI/CD Pipeline](Architecture/ArchitectureDiag.GCP.png)
 
 ## Introduction
 
 This project implements a comprehensive security-centric CI/CD pipeline designed for modern cloud-native applications. Built on Google Cloud Platform (GCP), it demonstrates enterprise-grade security practices and automation throughout the software development lifecycle.
+
+![Security-centric CI/CD Pipeline](Architecture/ArchitectureDiag.GCP.png)
 
 ### Key Features
 
