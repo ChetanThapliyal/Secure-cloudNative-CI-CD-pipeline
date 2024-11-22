@@ -2,17 +2,59 @@
 
 A security-centric CI/CD pipeline which integrates cutting-edge tools and practices to ensure robust code quality, vulnerability scanning, artifact publishing, secure Kubernetes deployment, and continuous monitoring.
 
+## Table of Contents
+- [End-to-End Secure Cloud Native CI/CD Pipeline](#end-to-end-secure-cloud-native-cicd-pipeline)
+  - [Table of Contents](#table-of-contents)
+      - [Read the Blog Post here!](#read-the-blog-post-here)
+  - [Introduction](#introduction)
+    - [Key Features](#key-features)
+    - [Business Benefits](#business-benefits)
+  - [Technologies Used](#technologies-used)
+  - [Project Structure](#project-structure)
+  - [Workflow](#workflow)
+    - [Screenshots](#screenshots)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [Contributing](#contributing)
+  - [License](#license)
+
 #### [Read the Blog Post here!](https://blog.chetan-thapliyal.cloud/implementing-a-security-centric-cloud-native-cicd-pipeline-a-real-world-demonstration-using-terraform-and-gcp) 
 
 ![Security-centric CI/CD Pipeline](Architecture/ArchitectureDiag.GCP.png)
 
 ## Introduction
 
-CI/CD pipeline is built on the principles of security, automation, and continuous monitoring to deliver a seamless and secure development and deployment experience.
+This project implements a comprehensive security-centric CI/CD pipeline designed for modern cloud-native applications. Built on Google Cloud Platform (GCP), it demonstrates enterprise-grade security practices and automation throughout the software development lifecycle.
 
-* **Security by Design:** Security considerations are integrated into every stage of the development and deployment process.
-* **Automation:** The pipeline leverages automation to enhance efficiency, security, and reduce human error.
-* **Continuous Monitoring:**  Systems and applications are continuously monitored to detect issues and anomalies promptly.
+### Key Features
+
+* **Security by Design:** 
+  - Multi-layer security scanning with Aqua Trivy and SonarQube
+  - Kubernetes security auditing using Kubeaudit
+  - Secure artifact storage with Nexus Repository
+  - Automated vulnerability assessments at code and container levels
+
+* **Automation First:** 
+  - Fully automated pipeline using Jenkins
+  - Infrastructure as Code with Terraform
+  - Containerized deployments with Docker and Kubernetes
+  - Automated quality gates and security checks
+
+* **Comprehensive Monitoring:**  
+  - Real-time system metrics with Prometheus
+  - Visual dashboards through Grafana
+  - Automated alerts via Gmail
+  - Blackbox monitoring for external endpoint health
+
+### Business Benefits
+- Reduced security risks through automated scanning and continuous monitoring
+- Faster time to market with automated deployment pipeline
+- Improved code quality through automated testing and analysis
+- Enhanced reliability with continuous monitoring and alerting
+
+For a detailed walkthrough of the implementation, check out my [comprehensive blog post](https://blog.chetan-thapliyal.cloud/implementing-a-security-centric-cloud-native-cicd-pipeline-a-real-world-demonstration-using-terraform-and-gcp).
+
 
 ## Technologies Used
 
@@ -36,12 +78,6 @@ CI/CD pipeline is built on the principles of security, automation, and continuou
 * `src/`: Contains the source code of the demonstration application, Gcloud Infra and installation scripts, Kubernetes configuration files, etc.
 * `terraform/` : Terraform configuration files.
 * `Jenkinsfile`:  Declarative Jenkins pipeline definition.
-
-### Screenshots
-![Deployed Website](ProjectImages/DeployedWebsite.png)
-![GrafanaDashboard](ProjectImages/GrafanaMonitoringSystem.png)
-![Blackbox Exporter](ProjectImages/BlackboxExporter.png)
-![Website Traffic Monitor](ProjectImages/GrafanaMonitoringWebsiteTraffic.png)
 
 ## Workflow
 
@@ -67,3 +103,39 @@ CI/CD pipeline is built on the principles of security, automation, and continuou
 10. **Monitoring and Notifications:**
     * Monitoring solutions track system and website health.
     * Emails are sent for deployment status and critical alerts.
+
+### Screenshots
+![Deployed Website](ProjectImages/DeployedWebsite.png)
+![GrafanaDashboard](ProjectImages/GrafanaMonitoringSystem.png)
+![Blackbox Exporter](ProjectImages/BlackboxExporter.png)
+![Website Traffic Monitor](ProjectImages/GrafanaMonitoringWebsiteTraffic.png)
+
+## Getting Started
+
+### Prerequisites
+- [Docker](https://www.docker.com/get-started)
+- [Jenkins](https://www.jenkins.io/download/)
+- [Terraform](https://www.terraform.io/downloads)
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/yourproject.git
+2. Navigate to the project directory:
+   ```bash
+   cd yourproject
+3. Follow the setup instructions for each component in the config/ directory.
+
+## Contributing
+
+Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) first.
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
