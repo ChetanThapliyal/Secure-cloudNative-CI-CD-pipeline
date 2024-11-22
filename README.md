@@ -96,7 +96,7 @@ For a detailed walkthrough of the implementation, check out my [comprehensive bl
     * Monitoring solutions track system and website health.
     * Emails are sent for deployment status and critical alerts.
 
-### Screenshots
+### Proect Snippets
 ![Deployed Website](ProjectImages/DeployedWebsite.png)
 ![GrafanaDashboard](ProjectImages/GrafanaMonitoringSystem.png)
 ![Blackbox Exporter](ProjectImages/BlackboxExporter.png)
