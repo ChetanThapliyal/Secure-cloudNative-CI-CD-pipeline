@@ -113,9 +113,11 @@ For a detailed walkthrough of the implementation, check out my [comprehensive bl
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/yourproject.git
+   ```
 2. Navigate to the project directory:
    ```bash
    cd yourproject
+   ```
 3. Follow the setup instructions for each component in the config/ directory.
 
 ## Contributing
